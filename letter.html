@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: radial-gradient(circle, #ff7675, #d63031);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .heart-container {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .heart {
+            font-size: 4em;
+            color: #e74c3c;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .heart:hover {
+            transform: scale(1.2);
+        }
+
+        .message-overlay {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: rgba(231, 76, 60, 0.9);
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .heart-container:hover .message-overlay {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="heart-container">
+    <div class="heart">❤️</div>
+    <div class="message-overlay">
+        <p>Hey roomie! Happy to meet you. Hehe 😄</p>
+    </div>
+</div>
+
+</body>
+</html>
